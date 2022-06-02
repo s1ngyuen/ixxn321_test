@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Safety Awareness Tools</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a class="logo" href="index.html">
+            <div style="margin:auto">
+                <h1>Bank</h1>
+                <h1>&</h1>
+                <h1>Me</h1>
+            </div>
+        </a>
+        <a href="playpen.html">
+            <p>PlayPen</p>
+        </a>
+        <a href="safety.html">
+            <p class="current">Safety tips</p>
+        </a>
+        <a href="quiz.html">
+            <p>Interactive quiz</p>
+        </a>
+        <a onclick="increaseFontSize()">
+            <h1 class="font-increaser">Aa+</h1>
+        </a>
+    </nav>
+    <!-- Safety Tips -->
+    <div id="content">
+        <div class="container" style="grid-template-rows:none">
+            <div class="flex-column" style="grid-column: span 3">
+                <h1 class="title">Password protection</h1>
+            </div>
+            <div class="content" style="grid-column: span 2;">
+                <h2>Tip 1</h2>
+                    <br>
+                    <h3>Use a passphrase</h3>
+                        <p>If a password puts a padlock on your account, a passphrase gives its own security system! They’re stronger and more secure versions of passwords.</p>
+                    <h3>What is a passphrase?</h3>
+                        <p>Passphrases use four or more random words as your password. This makes them hard for cybercriminals to guess but easy for you to remember.</p>
+                    <h3>Tips for creating a passphrase</h3>
+                        <p>If a password puts a padlock on your account, a passphrase gives its own security system! They’re stronger and more secure versions of passwords.</p>
+                <h2>Tip 2</h2>
+                    <br>
+                    <h3>Use Multi-factor authentication</h3>
+                        <p>Multi-factor authentication (MFA) protects you from criminals who are trying to break in.<br><br>
+                        With multi-factor authentication activated, you need to give multiple pieces of information to gain access to your account. For example, you may need to enter your password and a text message code to log in to your bank.<br><br>
+                        The extra layer makes it harder for cybercriminals to hack in. They might manage to work out one part, like your password, but they will still need to obtain other pieces of the puzzle to access your account.</p>
+                <h2>Tip 3</h2>
+                    <br>
+                    <h3>Avoid public wifi</h3>
+                        <p>Avoid public Wi-Fi when you’re banking or shopping online.<br><br>
+                        Public Wi-Fi is great for watching videos or reading websites but keep any online activity involving money for your home internet connection. Public Wi-Fi can be risky.</p>
+                <h1 class="title">Stay safe from scams</h1>
+                <h2>Tip 1</h2>
+                    <br>
+                    <h3>Don't give out your personal details</h3>
+                        <p style="margin-left:20px">- Never give out your personal, credit card or online account details over the phone, unless you made the phone call and got the number from a trusted source<br>
+                        - Never respond to emails or phone calls from someone claiming to be your bank and asking for account details. Genuine banks or financial institutions never do this. This is what scammers do to steal your identity and your money. </p>
+                    <h2>Tip 2</h2>
+                        <br>
+                    <h3>Spot the scam</h3>
+                        <p>Scammers can target you online, by phone or by email. Know what to look for so you can spot a scam and protect yourself.</p>
+                    <h3>Loan scams</h3>
+                        <p>If someone contacts you out of the blue to offer you a loan, it’s probably a scam. Signs of a loan scam include:</p>
+                        <p style="margin-left:20px">
+                        - The loan seems too good to be true (for example, a really low interest rate).<br>
+                        - There's no credit check or you're guaranteed approval.<br>
+                        - They ask for an up-front deposit or your bank details.<br>
+                        - The offer is ending soon and they pressure you to act now.<br>
+                        - The company claims to be in New Zealand but has an international phone number.
+                    <h3>Phishing scams</h3>
+                        <p>Phishing is when a scammer tries to steal your personal information. The scammer pretends to be a company you know, like a bank or an internet provider. The scammer may contact you by email, phone or text, or on social media. Signs of a phishing scam include:</p>
+                        <p style="margin-left:20px">- The email address doesn't match the company name (also look for hotmail, gmail or outlook in the address).<br>
+                        - There are spelling mistakes or the information doesn't make sense.<br>
+                        - You're asked to update or confirm your personal details.<br>
+                        - You're asked for immediate payment.</p>
+            </div>
+            <div class="flex-around">
+                <div>
+                    <img class="michael" src="images/michael.png">
+                </div>
+                <div class="penny" style="grid-row: span 2">
+                    <img src="images/penny.png">
+                    <img class="corner" src="images/corner.svg">
+                    <div class="blurb">
+                        <div>
+                            <h3 id="penny-text">
+                                Great work Sarah, <br><br> You are learning about password protection tips and staying safe from scams. <br><br> When your ready lets go to the playpen to see what online banking looks like.  <br><br>
+                            </h3>
+                            <a class="button" href="playpen.html">Take me to the playpen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="flex-around">
+            <div class="flex-row">
+               <a class="logo" href="index.html">
+                    <div style="margin:auto">
+                        <h1>Bank</h1>
+                        <h1>&</h1>
+                        <h1>Me</h1>
+                    </div>
+                </a>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/mail.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>info@bank&me.com</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/location.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>101 Cuba Street, Wellington 3018</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/phone.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>+64 9 456 8871</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-column">
+            <div>
+                <h2>Chat online</h2>
+            </div>
+            <br>
+            <input type="text" placeholder="Type your question here and and a customer services member will be with you shortly...">
+        </div>
+    </div> 
+</body>
+</html>

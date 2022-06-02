@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Bank&Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+</head>
+<body onload="setup()">
+    <!-- Navbar -->
+    <nav>
+        <a class="logo" href="index.html">
+            <div style="margin:auto">
+                <h1>Bank</h1>
+                <h1>&</h1>
+                <h1>Me</h1>
+            </div>
+        </a>
+        <a href="playpen.html">
+            <p>PlayPen</p>
+        </a>
+        <a href="safety.html">
+            <p>Safety tips</p>
+        </a>
+        <a href="quiz.html">
+            <p>Interactive quiz</p>
+        </a>
+        <a onclick="increaseFontSize()">
+            <h1 class="font-increaser">Aa+</h1>
+        </a>
+    </nav>
+    <!-- Links -->
+    <div class="container" id="content">
+        <div class="flex-column" style="grid-column: span 2;">
+            <h1 class="title">Become confident in your online banking skills.</h1>
+        </div>
+        <div class="penny">
+            <img src="images/penny.png">
+            <img class="corner" src="images/corner.svg">
+            <div class="blurb flex-column"><h3>Hi, I'm Penny <br><br> Welcome to Bank&Me <br><br> Here you will learn skills to become confident in online banking. <br><br> Click on me to get helpful prompts along the way. </h3>
+            </div>
+        </div>
+        <div class="content flex-around" style="grid-column: span 2;">
+            <div>
+                <h2>The online banking Playpen</h2>
+                <p>Get an inside view of online banking without needing to sign up for it. Take your time navigating the 'play pen' site. Once you feel you are ready, try the interactive quiz to see if you are able to complete a few online banking activities. </p>
+                <a href="account.html" class="button">Try me</a>
+            </div>
+            <div>
+                <h2>Safety awareness tools</h2>
+                <p>Learn about what makes a password strong as well as setting up extra security measures to ensure your online banking is secure. Find out  tips and tricks to help you know if you are being scamed and how to respond.</p>
+                <a href="safety.html" class="button">Learn more</a>
+            </div>
+            <div>
+                <h2>Interactive quiz</h2>
+                <p>Test your online banking skills by navigating the online banking play pen to complete a few common online banking activities. These activities are designed to build confidence with online banking so you can take control of your finances online.  </p>
+                <a href="quiz.html" class="button">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="flex-around">
+            <div class="flex-row">
+               <a class="logo" href="index.html">
+                    <div style="margin:auto">
+                        <h1>Bank</h1>
+                        <h1>&</h1>
+                        <h1>Me</h1>
+                    </div>
+                </a>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/mail.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>info@bank&me.com</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/location.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>101 Cuba Street, Wellington 3018</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/phone.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>+64 9 456 8871</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-column">
+            <div>
+                <h2>Chat online</h2>
+            </div>
+            <br>
+            <input type="text" placeholder="Type your question here and and a customer services member will be with you shortly...">
+        </div>
+    </div>    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

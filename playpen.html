@@ -1,0 +1,317 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playpen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <nav class="quick-exit">
+        <a class="logo" href="index.html">
+            <div style="margin:auto">
+                <h1>Bank</h1>
+                <h1>&</h1>
+                <h1>Me</h1>
+            </div>
+        </a>
+        <a href="playpen.html">
+            <p class="current">PlayPen</p>
+        </a>
+        <a href="safety.html">
+            <p>Safety tips</p>
+        </a>
+        <a href="quiz.html">
+            <p>Interactive quiz</p>
+        </a>
+        <a onclick="increaseFontSize()">
+            <h1 class="font-increaser">Aa+</h1>
+        </a>
+        <div class="flex-column">
+            <a class="button" href="http://www.google.com">Quick Exit</a>
+        </div>
+    </nav>
+    <div class="container" id="login">
+        <h1 style="grid-column-start: 2;">The first thing to do when banking online is to log in. </h1>
+        <div class="penny" style="grid-row: span 2">
+            <img src="images/penny.png">
+            <img class="corner" src="images/corner.svg">
+            <div class="blurb">
+                <div>
+                    <h3>
+                        Hi Sarah Smith <br><br> Is your password secure? <br><br>Before logging in, lets quickly look at some important tips to keep your password secure. <br><br>
+                    </h3>
+                    <a class="button" href="safety.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up flex-column" style="display:flex;grid-column-start:2">
+            <div class="flex-around">
+                <a class="logo" href="index.html">
+                    <div style="margin:auto">
+                        <h1>Bank</h1>
+                        <h1>&</h1>
+                        <h1>Me</h1>
+                    </div>
+                </a>
+                <br>
+                <div class="flex-row">
+                    <div>
+                        <label>
+                            <h3>First Name</h3>
+                        </label>
+                        <input type="text" placeholder="Type name here" style="width:90%">
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Last Name</h3>
+                        </label>
+                        <input type="text" placeholder="Type name here" style="width:90%;margin-left:0%">
+                    </div>
+                </div>
+                <label>
+                    <h3>Email</h3>
+                </label>
+                <input type="text" placeholder="Type your email here">
+                <label>
+                    <h3>Password</h3>
+                </label>
+                <input type="text" placeholder="Type your password here">
+                <br>
+                <a class="button" href="javascript:selectPlaypen()">Log in</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="display:none" id="playpen">
+        <!-- Customer information -->
+        <div class="flex-around">
+            <div>
+                <h1>Hi Sarah</h1>
+                <br>
+                <h3>Welcome to your online banking</h3>
+            </div>
+        </div>
+        <!-- Playpen navigation -->
+        <div>
+            <div class="icons">
+                <a href="javascript:selectAccount()" class="flex-column">
+                    <img src="images/account.svg" onmouseover="this.src='images/account_white.svg';" onmouseout="this.src='images/account.svg';">
+                    <p>My Accounts</p>
+                </a>
+                <a href="javascript:selectPay()" class="flex-column">
+                    <img src="images/pay.svg" onmouseover="this.src='images/pay_white.svg';" onmouseout="this.src='images/pay.svg';">
+                    <p>Pay Someone</p>
+                </a>
+                <a href="javascript:selectTransfer()" class="flex-column">
+                    <img src="images/transfer.svg" onmouseover="this.src='images/transfer_white.svg';" onmouseout="this.src='images/transfer.svg';">
+                    <p>Transfer Money</p>
+                </a>
+                <a class="flex-column">
+                    <img src="images/profile.svg" onmouseover="this.src='images/profile_white.svg';" onmouseout="this.src='images/profile.svg';">
+                    <p>Profile</p>
+                </a>
+            </div>
+        </div>
+        <!-- Penny -->
+        <div class="penny" style="grid-row: span 2">
+            <img src="images/penny.png">
+            <img class="corner" src="images/corner.svg">
+            <div class="blurb">
+                <h3 id="penny-text">
+                    This is the online banking Playpen. <br><br> Move around the online banking website to familiarize yourself with how online banking works. <br><br> On this 'My Accounts' page you can check your accounts and search transactions<br><br>
+                </h3>
+            </div>
+        </div>
+        <!-- Accounts -->
+        <div class="flex-around">
+            <div></div>
+            <div>
+                <a href="javascript:selectEveryday()">
+                    <div class="account">
+                        <h2>Everyday account</h2>
+                        <h1>$13,685.35</h1>
+                        <h3 style="font-weight:500">Account number:</h3>
+                        <h3>12 4356 7890 1234</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="javascript:selectSavings()">
+                    <div class="account">
+                        <h2>Savings account</h2>
+                        <h1>$40,055.17</h1>
+                        <h3 style="font-weight:500">Account number:</h3>
+                        <h3>98 7654 3210 9876</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <h3>Search transactions</h3>
+                <input type="text" placeholder="Keyword" style="margin-left:0">
+                <input type="date" placeholder="Date Start" style="margin-left:0;text-align:center">
+                <input type="date" placeholder="Date End" style="margin-left:0;text-align:center">
+            </div>
+            <div></div>
+        </div>
+        <!-- Everyday Account -->
+        <div id="everyday-account" style="display:block">
+            <div class="flex-column" style="height:8vh">
+                <h2>Everyday Account</h2>
+            </div>
+            <div class="transaction"><h3>Recent Transactions</h3> <h3>Date</h3><h3>Debit</h3><h3>Credit</h3><h3>Balance</h3></div>
+            <div class="scroll">
+                <div class="transaction">
+                    <p>Suji Bar</p>
+                    <p>April 13, 2022</p>
+                    <p>-$109.75</p>
+                    <p>-</p>
+                    <p>$13,685.35</p>
+                </div>
+            </div>
+        </div>
+         <!-- Savings Account -->
+        <div id="savings-account" style="display:none">
+            <div class="flex-column" style="height:8vh">
+                <h2>Savings Account</h2>
+            </div>
+            <div class="transaction"><h3>Recent Transactions</h3> <h3>Date</h3><h3>Debit</h3><h3>Credit</h3><h3>Balance</h3></div>
+            <div class="scroll">
+                <div class="transaction">
+                    <p>Suji Bar</p>
+                    <p>April 13, 2022</p>
+                    <p>-$109.75</p>
+                    <p>-</p>
+                    <p>$13,685.35</p>
+                </div>
+            </div>
+        </div>
+         <!-- Pay Someone -->
+        <div class="flex-around" id="pay" style="display:none">
+            <div>
+                <h1 style="text-align:center" id="payment-title">Make a payment</h1>
+                <br>
+                <div class="pop-up flex-column" id="payment-1" style="display:flex">
+                    <div class="flex-around">
+                        <h3>Select Account</h3>
+                            <select name="account">
+                                <option value="everyday">Everyday Account</option>
+                                <option value="savings">Savings Account</option>
+                            </select>
+                        <br>
+                        <h3>Select Payee Type</h3>
+                            <select name="account">
+                                <option value="everyday">Select Payee</option>
+                                <option value="savings">Create a new payee</option>
+                            </select>
+                        <br>
+                        <h3>Enter Date</h3>
+                            <input type="date">
+                        <br>
+                        <h3>Enter Amount</h3>
+                            <input type="text" placeholder="$">
+                        <br>
+                        <a class="button" href="javascript:selectPayee()">Confirm</a>
+                    </div>
+                </div>
+                <div class="pop-up flex-column" id="payment-2" style="display:none">
+                    <div class="flex-around">
+                        <h3>Name</h3>
+                            <input type="text" placeholder="Type name here">
+                        <br>
+                        <h3>Account Number</h3>
+                            <input type="text" placeholder="XX XXXX XXXX XXXX">
+                        <br>
+                        <h3>Save to Payee List</h3>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        <a class="button" href="javascript:Coonfirm()">Confirm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Transfer Money -->
+        <div class="flex-around" id="transfer" style="display:none">
+            <div>
+                <h1 style="text-align:center">Make a transfer</h1>
+                <br>
+                <div class="pop-up flex-column" style="display:flex">
+                    <div class="flex-around">
+                        <h3>From</h3>
+                            <select name="account">
+                                <option value="everyday">Everyday Account</option>
+                                <option value="savings">Savings Account</option>
+                            </select>
+                        <br>
+                        <h3>To</h3>
+                            <select name="account">
+                                <option value="everyday">Everyday Account</option>
+                                <option value="savings">Savings Account</option>
+                            </select>
+                        <br>
+                        <h3>Enter Amount</h3>
+                            <input type="text" placeholder="$">
+                        <br>
+                        <h3>Date</h3>
+                            <input type="date">
+                        <br>
+                        <a class="button" href="javascript:selectPayee()">Confirm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="flex-around">
+            <div class="flex-row">
+               <a class="logo" href="index.html">
+                    <div style="margin:auto">
+                        <h1>Bank</h1>
+                        <h1>&</h1>
+                        <h1>Me</h1>
+                    </div>
+                </a>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/mail.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>info@bank&me.com</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/location.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>101 Cuba Street, Wellington 3018</p>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <img src="images/phone.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <p>+64 9 456 8871</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-column">
+            <div>
+                <h2>Chat online</h2>
+            </div>
+            <br>
+            <input type="text" placeholder="Type your question here and and a customer services member will be with you shortly...">
+        </div>
+    </div> 
+</body>
+</html>
